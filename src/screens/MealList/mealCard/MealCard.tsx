@@ -12,7 +12,6 @@ class MealCard extends React.Component<Props, State> {
     render() {
         return (
             <Card style={styles.cardWrapper}>
-                {/* <CardItem header></CardItem> */}
                 <CardItem cardBody style={styles.imageWrapper}>
                     <Image
                         source={{
