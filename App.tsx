@@ -1,5 +1,4 @@
 import React from 'react';
-import * as firebase from "firebase/app";
 import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
 import { StyleSheet, View } from 'react-native';
