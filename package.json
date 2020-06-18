@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "expo": "~37.0.3",
+<<<<<<< HEAD
     "firebase": "7.9.0",
+=======
+    "firebase": "^7.15.1",
+>>>>>>> 0ec956592c455168f312e09e091e4c9fd43841ba
     "native-base": "^2.13.12",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",

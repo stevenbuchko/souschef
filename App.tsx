@@ -4,6 +4,7 @@ import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
 import { StyleSheet, View } from 'react-native';
 import MealListScreen from './src/screens/MealList/MealListScreen';
+import RecipeScreen from './src/screens/Recipe/RecipeScreen';
 
 export default class App extends React.Component {
   state = {
@@ -31,8 +32,13 @@ export default class App extends React.Component {
     }
 
     return (
+<<<<<<< HEAD
       <View>
         <MealListScreen />
+=======
+      <View style={styles.container}>
+        <RecipeScreen />
+>>>>>>> 0ec956592c455168f312e09e091e4c9fd43841ba
       </View>
     );
   }

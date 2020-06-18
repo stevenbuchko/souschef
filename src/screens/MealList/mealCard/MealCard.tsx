@@ -1,5 +1,9 @@
 import { Text, Card, CardItem } from 'native-base';
+<<<<<<< HEAD
 import { Image, StyleSheet, View } from 'react-native';
+=======
+import { Image, View } from 'react-native';
+>>>>>>> 0ec956592c455168f312e09e091e4c9fd43841ba
 import * as React from 'react';
 import styles from './styles';
 
