@@ -1,5 +1,9 @@
-import { Text, Card, CardItem, View } from 'native-base';
-import { Image } from 'react-native';
+import { Text, Card, CardItem } from 'native-base';
+<<<<<<< HEAD
+import { Image, StyleSheet, View } from 'react-native';
+=======
+import { Image, View } from 'react-native';
+>>>>>>> 0ec956592c455168f312e09e091e4c9fd43841ba
 import * as React from 'react';
 import styles from './styles';
 
@@ -11,6 +15,7 @@ class MealCard extends React.Component<Props, State> {
 
     render() {
         return (
+            <View style={styles.container}>
             <Card style={styles.cardWrapper}>
                 <CardItem cardBody style={styles.imageWrapper}>
                     <Image
@@ -31,6 +36,7 @@ class MealCard extends React.Component<Props, State> {
                     </Text>
                 </CardItem>
             </Card>
+            </View>
         );
     }
 }
