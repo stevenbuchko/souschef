@@ -1,8 +1,7 @@
-import { Text, Card, CardItem, View } from 'native-base';
 import * as React from 'react';
-import styles from './styles';
 import MealCard from './mealCard/MealCard';
-import MealSteps from './mealSteps/MealSteps';
+import { View } from 'native-base';
+import styles from './mealCard/styles';
 
 export interface Props { }
 
@@ -12,9 +11,8 @@ class MealListScreen extends React.Component<Props, State> {
 
     render() {
         return (
-            <View>
-            <MealCard/>
-            {/* <MealSteps/> */}
+            <View style={styles.container}>
+                <MealCard />
             </View>
         );
     }
