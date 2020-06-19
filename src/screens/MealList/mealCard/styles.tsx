@@ -6,7 +6,6 @@ const styles: any = StyleSheet.create({
         alignSelf: 'center',
         width: '90%',
         borderRadius: 16,
-        alignSelf: 'center'
     },
     mealImage: {
         height: 200,

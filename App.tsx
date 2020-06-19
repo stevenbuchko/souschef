@@ -31,13 +31,8 @@ export default class App extends React.Component {
     }
 
     return (
-<<<<<<< HEAD
-      <View>
-        <MealListScreen />
-=======
       <View style={styles.container}>
         <RecipeScreen />
->>>>>>> 0ec956592c455168f312e09e091e4c9fd43841ba
       </View>
     );
   }

@@ -19,14 +19,6 @@ const styles: any = StyleSheet.create({
         fontFamily: 'transat-text-bold',
         width: '70%'
     },
-    mealDescription: {
-        fontSize: 24,
-        fontFamily: 'transat-text-standard',
-        alignSelf: 'center',
-        paddingTop: 20,
-        paddingBottom: 16,
-        width: '90%',
-    }
 });
 
 export default styles;

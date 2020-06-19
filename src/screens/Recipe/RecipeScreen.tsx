@@ -2,7 +2,7 @@ import * as React from 'react';
 import styles from './styles';
 import RecipeStep from './RecipeStep/RecipeStep'
 import RecipeHeader from './RecipeHeader/RecipeHeader';
-import { View } from 'native-base';
+import { Text, View } from 'native-base';
 
 export interface Props { }
 
@@ -14,6 +14,9 @@ class RecipeScreen extends React.Component<Props, State> {
         return (
             <View style={styles.container}>
                 <RecipeHeader />
+                <Text style={styles.mealDescription}>
+                    Middle Eastern eggs poached in tomato sauce
+                </Text>
                 <RecipeStep />
             </View>
         );
