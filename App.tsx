@@ -2,8 +2,12 @@ import React from 'react';
 import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
 import { StyleSheet, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import MealListScreen from './src/screens/MealList/MealListScreen';
 import RecipeScreen from './src/screens/Recipe/RecipeScreen';
+
+const HomeStack = createStackNavigator();
 
 export default class App extends React.Component {
   state = {
@@ -31,7 +35,12 @@ export default class App extends React.Component {
     }
 
     return (
-      <RecipeScreen />
+      <NavigationContainer>
+        <HomeStack.Navigator headerMode='none'>
+          <HomeStack.Screen name="MealList" component={MealListScreen} />
+          <HomeStack.Screen name="Recipe" component={RecipeScreen} />
+        </HomeStack.Navigator>
+      </NavigationContainer>
     );
   }
 
