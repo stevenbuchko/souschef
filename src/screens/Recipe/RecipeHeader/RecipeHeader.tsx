@@ -1,9 +1,12 @@
 import { View } from 'native-base';
-import { Text, ImageBackground } from 'react-native';
+import { Image, Text, ImageBackground } from 'react-native';
 import * as React from 'react';
 import styles from './styles';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-export interface Props { }
+export interface Props {
+    navigation: any;
+}
 export interface State { }
 
 const INGREDIENTS = [
@@ -23,6 +26,18 @@ class RecipeHeader extends React.Component<Props, State> {
                     resizeMode="stretch"
                     style={styles.mealImage}
                 >
+                    <View style={styles.topWrapper}>
+                        <TouchableOpacity onPress={() => this.props.navigation.goBack()}>
+                            <Image
+                                source={{
+                                    uri:
+                                        'https://firebasestorage.googleapis.com/v0/b/sous-chef-bed75.appspot.com/o/back-arrow.png?alt=media&token=b2902508-6285-4a4a-af3e-09d1901a547d',
+                                }}
+                                resizeMode="contain"
+                                style={styles.backBtn}
+                            />
+                        </TouchableOpacity>
+                    </View>
                     <View style={styles.recipeNameWrapper}>
                         <Text style={styles.recipeName}>Eggplant Shakshuka</Text>
                     </View>

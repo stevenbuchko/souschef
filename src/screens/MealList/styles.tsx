@@ -4,7 +4,8 @@ const styles: any = StyleSheet.create({
     container: {
         alignItems: 'center',
         flex: 1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        backgroundColor: '#F5F5F5',
     }
 });
 

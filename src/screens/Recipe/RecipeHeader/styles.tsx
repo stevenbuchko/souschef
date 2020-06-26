@@ -9,6 +9,15 @@ const styles: any = StyleSheet.create({
         height: Dimensions.get('window').width * .6,
         alignSelf: 'center'
     },
+    topWrapper: {
+        width: '90%',
+        alignSelf: 'center',
+        marginTop: 40
+    },
+    backBtn: {
+        width: 20,
+        height: 20,
+    },
     recipeNameWrapper: {
         width: '90%',
         alignSelf: 'center',
